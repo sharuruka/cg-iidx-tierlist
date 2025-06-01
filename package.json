@@ -1,0 +1,20 @@
+{
+  "name": "cg-iidx-tierlist-builder",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsx scripts/build-userscript.ts",
+    "convert-tachi-charts": "tsx scripts/convert-tachi-charts-tierlist.ts external/charts-iidx.json external/songs-iidx.json output/tierlists.json",
+    "fetch-tachi-seeds": "tsx scripts/fetch-file.ts https://raw.githubusercontent.com/zkrising/Tachi/refs/heads/main/seeds/collections/charts-iidx.json external/charts-iidx.json && tsx scripts/fetch-file.ts https://raw.githubusercontent.com/zkrising/Tachi/refs/heads/main/seeds/collections/songs-iidx.json external/songs-iidx.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.15.21",
+    "eta": "^3.5.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
